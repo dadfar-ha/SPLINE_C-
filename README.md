@@ -1,4 +1,4 @@
-# SPLINE C++
+# Cubic SPLINE Interpolation C++
 Cubic SPLINE Interpolation for C++
 
 This is a Simple code for using SPLINE interpolation in C++.
