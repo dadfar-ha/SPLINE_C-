@@ -1,3 +1,7 @@
+//just replace the x and y in Fitter function---------------------------------------------------------------------
+
+
+
 #include "CurveFitt.h"
 #include <iostream>
 #include <vector>
@@ -19,7 +23,7 @@
 #include <QSqlQuery>
 #include <vector>
 #include <cmath>
-//just replace the x and y in Fitter function---------------------------------------------------------------------
+
 CurveFitt::CurveFitt(QObject *parent)
 {
 
@@ -120,16 +124,9 @@ void CurveFitt::fitter()
         std::default_random_engine generator;
      
         std::vector<double> x;  //[Define The Horizontal axis values]
-        std::vector<double> z;  //[Define The Vertical axis values]
-        std::vector<double> y;
-        for (int d = 1; d <=i; ++d) {
-            x.push_back( array[d][0]);
-            y.push_back(array[d][1]);
-            z.push_back(1700);
-        }
-        distance=0;
-        fileExW.open(fileExW2.toStdString());
-        auto [xs2, ys2] = InterpolateXY(x, y, i*100);
+        std::vector<double> y;  //[Define The Vertical axis values]
+    
+        auto [xs2, ys2] = InterpolateXY(x, y, 100);//100: the number of interpolation points
     
 }
 
