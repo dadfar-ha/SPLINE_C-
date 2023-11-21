@@ -1,4 +1,4 @@
-# SPLINE_C-
+# SPLINE_C++-
 SPLINE Interpolation for C++
 
 This is a Simple code for using SPLINE interpolation in C++.
